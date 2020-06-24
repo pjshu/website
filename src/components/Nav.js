@@ -8,7 +8,7 @@ import logo from '../images/FlaskCon_Logo.png';
 import useMediaQuery from '@material-ui/core/useMediaQuery';
 import {useTheme} from '@material-ui/core/styles';
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles({
   root: {
     flexGrow: 1,
     // position: "relative",
@@ -23,14 +23,16 @@ const useStyles = makeStyles((theme) => ({
     position: "fixed",
     right: 0
   },
-  title: {
-    flexGrow: 1,
-  },
-}));
+});
 
+// value         |0px     600px    960px    1280px   1920px
+// key           |xs      sm       md       lg       xl
+// screen width  |--------|--------|--------|--------|-------->
+// range         |   xs   |   sm   |   md   |   lg   |   xl
 export default function ButtonAppBar() {
   const classes = useStyles();
   const theme = useTheme();
+  //https://material-ui.com/customization/breakpoints/#breakpoints
   const matches = useMediaQuery(theme.breakpoints.down('md'), {noSsr: true});
 
   return (

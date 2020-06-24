@@ -1,13 +1,18 @@
 import React from 'react';
 import {Grid, Box} from "@material-ui/core";
+//icon
 import AccessTimeIcon from '@material-ui/icons/AccessTime';
 import RoomIcon from '@material-ui/icons/Room';
 
+
+// Timer component
 function Timing({date1, date2, name}) {
   return (
     <Grid item>
       <Grid item container>
+        {/*box shadow components*/}
         <Box
+          // box-Shadow: 0-10
           boxShadow={2}
           style={{
             marginLeft: 20,
@@ -122,14 +127,14 @@ function Home() {
             {...{date1: 1, date2: 0, name: 'days'}}
           />
           <Timing
-            {...{date1: 10, date2: 9, name: 'hours'}}
+            {...{date1: 0, date2: 9, name: 'hours'}}
           />
           <Timing
-            {...{date1: 2, date2: 27, name: 'minutes'}}
+            {...{date1: 2, date2: 7, name: 'minutes'}}
           />
 
           <Timing
-            {...{date1: 4, date2: 45, name: 'seconds'}}
+            {...{date1: 4, date2: 5, name: 'seconds'}}
           />
         </Grid>
 

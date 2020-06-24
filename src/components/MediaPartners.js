@@ -1,5 +1,5 @@
 import React from 'react';
-import {Box, Grid} from "@material-ui/core";
+import {Grid} from "@material-ui/core";
 import flask from '../images/flask.png';
 import python_discord from '../images/python_discord.jpg';
 

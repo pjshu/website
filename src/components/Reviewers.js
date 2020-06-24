@@ -55,6 +55,7 @@ function Reviewers() {
         alignItems={"center"}
       >
         <div
+          // Gradient font
           style={{
             fontSize: '40px',
             background: 'linear-gradient(to right, #F9C228, #EE762E)',
@@ -99,7 +100,6 @@ function Reviewers() {
           />
         </Grid>
 
-
         <Grid
           container
           justify={"center"}
@@ -124,7 +124,6 @@ function Reviewers() {
           />
         </Grid>
       </Grid>
-
     </Grid>
   );
 }

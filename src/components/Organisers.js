@@ -10,7 +10,7 @@ import python_moscow from '../images/python_moscow.png';
 import {Grid} from "@material-ui/core";
 import {makeStyles} from "@material-ui/core/styles";
 
-
+// css in js
 const useStyles = makeStyles({
   image: {
     width: 150,
@@ -38,76 +38,36 @@ function Organisers() {
         <Grid container item justify={"center"} style={{
           marginTop: 40
         }}>
-          <Grid
-            container
-            component={'img'}
-            src={bangpypers}
-            justify={"center"}
-            alignItems={"center"}
-            className={classes.image}
-          />
-          <Grid
-            container
-            component={'img'}
-            src={GilPUG}
-            justify={"center"}
-            alignItems={"center"}
-            className={classes.image}/>
-          <Grid
-            container
-            component={'img'}
-            src={pyie}
-            justify={"center"}
-            alignItems={"center"}
-            className={classes.image}
-          />
-          <Grid
-            container
-            component={'img'}
-            src={pymug_new}
-            justify={"center"}
-            alignItems={"center"}
-            className={classes.image}
-          />
+          {
+            [bangpypers, GilPUG, pyie, pymug_new].map(image => (
+              <Grid
+                container
+                component={'img'}
+                src={image}
+                justify={"center"}
+                alignItems={"center"}
+                className={classes.image}
+              />
+            ))
+          }
         </Grid>
 
         <Grid container item justify={"center"} style={{
           marginTop: 40
         }}>
-          <Grid
-            container
-            component={'img'}
-            src={python_amsterdam}
-            justify={"center"}
-            alignItems={"center"}
-            className={classes.image}
-          />
-          <Grid
-            container
-            component={'img'}
-            src={pynigeria}
-            justify={"center"}
-            alignItems={"center"}
-            className={classes.image}
-          />
-          <Grid
-            container
-            component={'img'}
-            src={python_china}
-            justify={"center"}
-            alignItems={"center"}
-            className={classes.image}
-          />
-          <Grid
-            container
-            component={'img'}
-            src={python_moscow}
-            justify={"center"}
-            alignItems={"center"}
-            className={classes.image}
-          />
+          {
+            [python_amsterdam, pynigeria, python_china, python_moscow].map(image => (
+              <Grid
+                container
+                component={'img'}
+                src={image}
+                justify={"center"}
+                alignItems={"center"}
+                className={classes.image}
+              />
+            ))
+          }
         </Grid>
-
       </Grid>
     </Grid>
   );
