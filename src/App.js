@@ -1,26 +1,29 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Home from './components/Home';
+import About from './components/About';
+import Reviewers from './components/Reviewers';
+import Organisers from './components/Organisers';
+import MediaPartners from './components/MediaPartners';
+import CodeOfConduct from './components/CodeOfConduct';
+import Contact from './components/Contact';
+import Nav from './components/Nav';
+import {hot} from 'react-hot-loader';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Nav/>
+      <Home/>
+      <About/>
+      <Organisers/>
+      <Reviewers/>
+      <MediaPartners/>
+      <CodeOfConduct/>
+      <Contact/>
     </div>
   );
 }
 
-export default App;
+export default process.env.NODE_ENV === "development" ? hot(module)(App) : App;
+
