@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "./static/css/main.d218a688.chunk.css",
+    "main.js": "./static/js/main.4ec0dea7.chunk.js",
+    "main.js.map": "./static/js/main.4ec0dea7.chunk.js.map",
+    "runtime-main.js": "./static/js/runtime-main.be1df3d2.js",
+    "runtime-main.js.map": "./static/js/runtime-main.be1df3d2.js.map",
+    "static/js/2.980f7f62.chunk.js": "./static/js/2.980f7f62.chunk.js",
+    "static/js/2.980f7f62.chunk.js.map": "./static/js/2.980f7f62.chunk.js.map",
+    "index.html": "./index.html",
+    "precache-manifest.85adb45a57cb04e2287f8ceccd0d921d.js": "./precache-manifest.85adb45a57cb04e2287f8ceccd0d921d.js",
+    "service-worker.js": "./service-worker.js",
+    "static/css/main.d218a688.chunk.css.map": "./static/css/main.d218a688.chunk.css.map",
+    "static/js/2.980f7f62.chunk.js.LICENSE.txt": "./static/js/2.980f7f62.chunk.js.LICENSE.txt",
+    "static/media/GilPUG.jpg": "./static/media/GilPUG.0e633688.jpg",
+    "static/media/bangpypers.png": "./static/media/bangpypers.c00f94cb.png",
+    "static/media/pyie.png": "./static/media/pyie.5e6ab708.png",
+    "static/media/pymug_new.svg": "./static/media/pymug_new.3f873778.svg",
+    "static/media/pynigeria.svg": "./static/media/pynigeria.d8c37b67.svg",
+    "static/media/python_amsterdam.svg": "./static/media/python_amsterdam.83e841ce.svg",
+    "static/media/python_china.jpg": "./static/media/python_china.4b7f4f24.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.be1df3d2.js",
+    "static/js/2.980f7f62.chunk.js",
+    "static/css/main.d218a688.chunk.css",
+    "static/js/main.4ec0dea7.chunk.js"
+  ]
+}
